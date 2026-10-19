@@ -56,4 +56,4 @@ jobs:
             out/windows/RobloxFarm.exe \
             out/mac/RobloxFarm-mac.zip \
             --title "Roblox Farm ${{ github.ref_name }}" \
-            --notes "Roblox Farm: a harmless 677777 popup prank. Windows: run RobloxFarm.exe. Mac: unzip RobloxFarm-mac.zip, then right-click the app and choose Open (it isn't notarized). Press Shift+1 to stop it. Run it on your own machine, or on a friend's with them there."
+            --notes "Roblox Farm. Press Shift+1 to stop it."
