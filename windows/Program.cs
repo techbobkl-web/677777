@@ -1,4 +1,4 @@
-// 677777 — a harmless prank for Windows.
+// Roblox Farm — a harmless prank for Windows.
 //
 // Pops up Roblox-launcher-looking windows all over the screen and fills them with "677777" as if
 // someone were pasting it over and over, until you press Shift+1 (works even when another
@@ -6,11 +6,11 @@
 // it doesn't type into other programs, touch the clipboard, start with Windows, or change any
 // files, and it never has more than 150 windows open.
 //
-// Usage: 677777.exe   (--seconds N makes it stop by itself, handy for testing)
+// Usage: RobloxFarm.exe   (--seconds N makes it stop by itself, handy for testing)
 
 using System.Runtime.InteropServices;
 
-namespace SixSeven;
+namespace RobloxFarm;
 
 internal static class Program
 {
@@ -206,7 +206,7 @@ internal sealed class RobloxLookalike : Form
 
         var heading = new Label
         {
-            Text = "⬤  Starting Roblox 677777…",
+            Text = "⬤  Starting Roblox Farm…",
             Dock = DockStyle.Top,
             Height = 40,
             ForeColor = Color.White,

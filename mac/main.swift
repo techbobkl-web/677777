@@ -1,4 +1,4 @@
-// 677777 — a harmless prank for macOS.
+// Roblox Farm — a harmless prank for macOS.
 //
 // Pops up little Roblox-launcher-style windows all over the screen and fills them with "677777" as if someone
 // were pasting it over and over, until you press Shift+1 (works even when another app is in
@@ -6,7 +6,7 @@
 // type into other apps, touch the clipboard, start at login, or change any files, and it never
 // has more than 40 windows open.
 //
-// Usage: 677777.app   (the binary also takes --seconds N to stop by itself, handy for testing)
+// Usage: Roblox Farm.app   (the binary also takes --seconds N to stop by itself, handy for testing)
 
 import AppKit
 import Carbon.HIToolbox
@@ -102,7 +102,7 @@ final class PrankController: NSObject, NSApplicationDelegate {
         text.textContainerInset = NSSize(width: 6, height: 8)
 
         let header = NSAttributedString(
-            string: "⬤  Starting Roblox 677777…\n\n",
+            string: "⬤  Starting Roblox Farm…\n\n",
             attributes: [
                 .font: NSFont.systemFont(ofSize: 17, weight: .bold),
                 .foregroundColor: NSColor.white,

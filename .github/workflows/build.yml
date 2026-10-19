@@ -1,4 +1,4 @@
-name: Build 677777
+name: Build Roblox Farm
 
 on:
   push:
@@ -20,17 +20,17 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
-      - run: dotnet publish SixSeven.csproj -c Release -o publish
+      - run: dotnet publish RobloxFarm.csproj -c Release -o publish
       - uses: actions/upload-artifact@v4
         with:
           name: windows
-          path: windows/publish/677777.exe
+          path: windows/publish/RobloxFarm.exe
 
   mac:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build 677777.app and zip it
+      - name: Build Roblox Farm.app and zip it
         working-directory: mac
         run: |
           if [[ "$GITHUB_REF" == refs/tags/v* ]]; then export VERSION="${GITHUB_REF_NAME#v}"; fi
@@ -38,7 +38,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: mac
-          path: mac/dist/677777-mac.zip
+          path: mac/dist/RobloxFarm-mac.zip
 
   release:
     if: startsWith(github.ref, 'refs/tags/v')
@@ -53,7 +53,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
         run: |
           gh release create "${{ github.ref_name }}" \
-            out/windows/677777.exe \
-            out/mac/677777-mac.zip \
-            --title "677777 ${{ github.ref_name }}" \
-            --notes "A harmless 677777 popup prank. Windows: run 677777.exe. Mac: unzip 677777-mac.zip, then right-click the app and choose Open (it isn't notarized). Press Shift+1 to stop it. Run it on your own machine, or on a friend's with them there."
+            out/windows/RobloxFarm.exe \
+            out/mac/RobloxFarm-mac.zip \
+            --title "Roblox Farm ${{ github.ref_name }}" \
+            --notes "Roblox Farm: a harmless 677777 popup prank. Windows: run RobloxFarm.exe. Mac: unzip RobloxFarm-mac.zip, then right-click the app and choose Open (it isn't notarized). Press Shift+1 to stop it. Run it on your own machine, or on a friend's with them there."

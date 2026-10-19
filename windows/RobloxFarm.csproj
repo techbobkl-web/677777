@@ -6,13 +6,13 @@
     <UseWindowsForms>true</UseWindowsForms>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyName>677777</AssemblyName>
-    <RootNamespace>SixSeven</RootNamespace>
+    <AssemblyName>RobloxFarm</AssemblyName>
+    <RootNamespace>RobloxFarm</RootNamespace>
     <Version>1.0.0</Version>
     <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
 
-    <!-- One self-contained 677777.exe: no .NET install needed on the PC. -->
+    <!-- One self-contained RobloxFarm.exe: no .NET install needed on the PC. -->
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <SelfContained>true</SelfContained>
     <PublishSingleFile>true</PublishSingleFile>
