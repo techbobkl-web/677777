@@ -1,0 +1,6 @@
+bin/
+obj/
+publish/
+mac/dist/
+.DS_Store
+graphify-out/
