@@ -56,4 +56,4 @@ jobs:
             out/windows/RobloxFarm.exe \
             out/mac/RobloxFarm-mac.zip \
             --title "Roblox Farm ${{ github.ref_name }}" \
-            --notes "Roblox Farm. Press Shift+1 to stop it."
+            --notes "Roblox Farm"
